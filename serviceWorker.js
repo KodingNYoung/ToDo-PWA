@@ -1,5 +1,5 @@
 // set a cache storage name
-const cacheName = 'static-assets'
+const cacheName = 'static-assets';
 const assets = [
     "/", "/ToDo-PWA/",
     "/index.html","/ToDo-PWA/index.html/",
