@@ -2,10 +2,10 @@
 const cacheName = 'static-assets'
 const assets = [
     "/", "/ToDo-PWA/",
-    "/index.html","/ToDo-PWA/index.html",
-    "js/pwa.js", "/ToDo-PWA/js/pwa.js",
-    "js/script.js", "/ToDo-PWA/js/script.js",
-    "css/style.css", "/ToDo-PWA/css/style.css",
+    "/index.html","/ToDo-PWA/index.html/",
+    "/js/pwa.js", "/ToDo-PWA/js/pwa.js/",
+    "/js/script.js", "/ToDo-PWA/js/script.js/",
+    "/css/style.css", "/ToDo-PWA/css/style.css/",
     "https://kit.fontawesome.com/1395a25f53.js",
     "https://kit-free.fontawesome.com"
 ]
