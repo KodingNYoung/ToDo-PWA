@@ -43,7 +43,7 @@
     </div>
 
     <script>
-        // check if the browser supports service workers
+        // check if the browser supports serviceWorkers
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register('serviceWorker.js')
                 .then((regResponse) => console.log("Registered service worker", regResponse))

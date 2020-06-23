@@ -1,14 +1,10 @@
-// get the href of that site
-const HREF = location.href;
-console.log(`Got the href2: ${HREF}, proceeding with caching`)
 // set a cache storage name
 const cacheName = 'static-assets';
 const assets = [
-    "/ToDo-PWA/",
-    "/ToDo-PWA/index.html/",
-    "/ToDo-PWA/js/pwa.js/",
-    "/ToDo-PWA/js/script.js/",
-    "/ToDo-PWA/css/style.css/",
+    "/",
+    "index.html",
+    "js/script.js",
+    "css/style.css",
     "https://kit.fontawesome.com/1395a25f53.js",
     "https://kit-free.fontawesome.com"
 ]
@@ -22,10 +18,19 @@ self.addEventListener("install", (instEvt) => {
     // hold the event until the caching is done
     instEvt.waitUntil(
         // open a cache storage
-        caches.open(cacheName).then((cache) => {
-            // then add all assets
-            cache.addAll(assets)
-        })
+        caches.open(cacheName)
+            .then((cache) => {
+                // first delete all earlier entries
+                cache.keys().then(cacheEntries => {
+                    cacheEntries.forEach(cacheEntry => {
+                        cache.delete(cacheEntry);
+                    })
+                })
+
+                // then add all assets
+                cache.addAll(assets)
+            })
+            .catch((err) => console.log("There was an error: ", err))
     )
 });
 
