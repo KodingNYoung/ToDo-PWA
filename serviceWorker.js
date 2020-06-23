@@ -4,11 +4,11 @@ console.log(`Got the href: ${HREF}, proceeding with caching`)
 // set a cache storage name
 const cacheName = 'static-assets'
 const assets = [
-    `${HREF}/../`, "/ToDo-PWA/",
-    `${HREF}/../index.html`,"/ToDo-PWA/index.html/",
-    `${HREF}/../js/pwa.js`, "/ToDo-PWA/js/pwa.js/",
-    `${HREF}/../js/script.js`, "/ToDo-PWA/js/script.js/",
-    `${HREF}/../css/style.css`, "/ToDo-PWA/css/style.css/",
+    '/', "/ToDo-PWA/",
+    'index.html',"/ToDo-PWA/index.html/",
+    'js/pwa.js', "/ToDo-PWA/js/pwa.js/",
+    'js/script.js', "/ToDo-PWA/js/script.js/",
+    'css/style.css', "/ToDo-PWA/css/style.css/",
     "https://kit.fontawesome.com/1395a25f53.js",
     "https://kit-free.fontawesome.com"
 ]
