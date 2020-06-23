@@ -2,7 +2,7 @@
     "name": "To Do",
     "short_name" : "ToDo",
     "start_url" : "index.html",
-    "display": "standalone",
+    "display": "minimal-ui",
     "background_color": "#A5BBF5",
     "theme_color" : "#333",
     "orientation": "portrait-primary",
