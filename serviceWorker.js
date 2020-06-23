@@ -1,4 +1,3 @@
-const location
 // set a cache storage name
 const cacheName = 'static-assets';
 const assets = [
