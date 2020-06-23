@@ -7,7 +7,7 @@ const assets = [
     "css/style.css",
     "css/fontawesome.min.css",
     "css/all.min.css",
-    "webfonts/",
+    "webfonts/fa-regular-400.woff2",
     "https://kit.fontawesome.com/1395a25f53.js",
     "https://kit-free.fontawesome.com"
 ]
