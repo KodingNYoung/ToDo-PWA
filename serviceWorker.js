@@ -1,9 +1,13 @@
+const location
 // set a cache storage name
 const cacheName = 'static-assets';
 const assets = [
+
     "index.html",
     "js/script.js",
     "css/style.css",
+    "css/fontawesome.min.css",
+    "css/all.min.css",
     "https://kit.fontawesome.com/1395a25f53.js",
     "https://kit-free.fontawesome.com"
 ]
