@@ -1,7 +1,15 @@
+// get the root folder
+let locate = location.href.split("/");
+// remove the last items i.e the serviceworker string
+locate.pop();
+locate = locate.join("/");
+console.log(locate);
+
+
 // set a cache storage name
 const cacheName = 'static-assets';
 const assets = [
-
+    `${locate}`,
     "index.html",
     "js/script.js",
     "css/style.css",
