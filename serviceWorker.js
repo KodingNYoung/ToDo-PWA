@@ -1,5 +1,6 @@
 // get the href of that site
 const HREF = location.href;
+console.log("Got the href", HREF, ""proceeding with caching)
 // set a cache storage name
 const cacheName = 'static-assets'
 const assets = [
